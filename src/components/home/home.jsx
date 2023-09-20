@@ -19,7 +19,7 @@ function home() {
 		loadNFTs();
 	}, []);
 	async function loadNFTs() {
-		const provider = new ethers.providers.JsonRpcProvider("https://matic-mumbai.chainstacklabs.com");
+		const provider = new ethers.providers.JsonRpcProvider("https://rpc-mumbai.maticvigil.com/");
 		const contract = new ethers.Contract(
 			creatorAddress,
 			CreatorNFT.abi,
